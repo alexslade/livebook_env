@@ -19,8 +19,7 @@ LivebookEnv.import_dotenv("/global/path/to/your/project/.env")
 That's it! Your environment variables should be available to your livebook.
 ## Use without installing
 
-I released this utility as a package for quick livebook setup, but it consists of a single file.
-You can avoid installation and isntead copy-paste the entire contents of `lib/livebook_env.ex` into the setup block of your Livebook. Then call `LivebookEnv.import_dotenv` as illustrated in the example above.
+You can avoid installation and instead copy-paste the entire contents of `lib/livebook_env.ex` into the setup block of your Livebook. Then call `LivebookEnv.import_dotenv` as illustrated in the example above.
 
 ## Credits
 

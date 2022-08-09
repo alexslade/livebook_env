@@ -8,12 +8,8 @@ defmodule LivebookEnv.MixProject do
       elixir: "~> 1.13",
       deps: deps(),
       description: "A tiny utility for importing .env files into Livebooks",
-      package: [
-        name: "livebook_env",
-        files: ~w(lib mix.exs README*),
-        licenses: ["MIT"],
-        links: %{"GitHub" => "https://github.com/alexslade/livebook_env"}
-      ]
+      package: package(),
+      docs: docs()
     ]
   end
 
@@ -21,6 +17,24 @@ defmodule LivebookEnv.MixProject do
   defp deps do
     [
       {:ex_doc, "~> 0.21", only: :dev, runtime: false}
+    ]
+  end
+
+  defp package do
+    [
+      name: "livebook_env",
+      files: ~w(lib mix.exs README*),
+      licenses: ["MIT"],
+      links: %{"GitHub" => "https://github.com/alexslade/livebook_env"}
+    ]
+  end
+
+  defp docs do
+    [
+      main: "readme",
+      extras: [
+        "README.md"
+      ]
     ]
   end
 end

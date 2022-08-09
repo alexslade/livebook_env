@@ -7,6 +7,7 @@ defmodule LivebookEnv.MixProject do
       version: "0.1.0",
       elixir: "~> 1.13",
       deps: deps(),
+      description: "A tiny utility for importing .env files into Livebooks",
       package: [
         name: "livebook_env",
         files: ~w(lib mix.exs README*),
